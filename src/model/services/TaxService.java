@@ -9,14 +9,8 @@ package model.services;
  *
  * @author faust
  */
-public class PortugalTaxService implements TaxService{
-
-    public double tax(double amount) {
-        if (amount <= 100.0) {
-            return amount * 0.2;
-        } else {
-            return amount * 0.15;
-        }
-    }
-
+public interface TaxService {
+    
+    double tax(double amount);
+    
 }
